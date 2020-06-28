@@ -3,7 +3,7 @@ module.exports = {
     title: `DemandCluster`,
     description: `DemandCluster Landing Page`,
     author: `@rondlite`,
-    github: `https://github.com/app-generator/gatsbyjs-starter-tailwindplay`,
+    github: `https://github.com/demandcluster`,
     blog: `https://blog.appseed.us/tag/gatsbyjs`,
     product: `https://appseed.us/apps/gatsbyjs`,
     docs: `https://docs.appseed.us/apps/gatsbyjs`
