@@ -13,6 +13,7 @@ function Layout({ children }) {
             siteMetadata {
               title,
               github,
+              backend,
               blog
             }
           }
@@ -476,9 +477,7 @@ function Layout({ children }) {
                         </div>
                     </div>
                 </div>
-              
-              <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
-
+          
             </footer>
 
         </body>
