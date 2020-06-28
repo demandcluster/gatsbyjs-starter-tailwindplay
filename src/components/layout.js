@@ -119,7 +119,8 @@ function Layout({ children }) {
                   <div className="w-5/6 sm:w-1/2 p-6">
                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3"></h3>
                     <p className="text-gray-600 mb-8"><br /><br />
-                    Manage your products, shops, orders, channels, vendors. The only solution that will solve all your needs.
+                    Manage your products, shops, orders, channels, vendors.<br/>
+                    The only solution that will solve all your needs.
                    </p>
                     
                   </div>
@@ -248,7 +249,7 @@ function Layout({ children }) {
                   <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                     <a href="#" className="flex flex-wrap no-underline hover:no-underline">
                       <p className="w-full text-gray-600 text-xs md:text-sm px-6">Open-Source</p>
-                      <div className="w-full font-bold text-xl text-gray-800 px-6">Coded by <a href="https://twitter.com/Sm0keDev">Sm0ke</a> </div>
+                      <div className="w-full font-bold text-xl text-gray-800 px-6">Coded by DemandCluster</div>
                       <p className="text-gray-800 text-base px-6 mb-5">
                         The source code is released under a license in which the copyright holder grants users the rights to study, change, and distribute the software to anyone and for any purpose.
                       </p>
@@ -363,7 +364,7 @@ function Layout({ children }) {
                 <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
               </div>
 
-              <h3 className="my-4 text-3xl leading-tight">Read more about GatsbyJS</h3>	
+              <h3 className="my-4 text-3xl leading-tight">Read more about DemandCluster</h3>	
 
               <form action={data.site.siteMetadata.blog}>
                 <button type="submit"
