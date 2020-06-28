@@ -119,7 +119,7 @@ function Layout({ children }) {
                   <div className="w-5/6 sm:w-1/2 p-6">
                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3"></h3>
                     <p className="text-gray-600 mb-8"><br /><br />
-                    Manage your products, shop and connect to any marketplace. The only solution that will solve all your needs.
+                    Manage your products, shops, orders, channels, vendors. The only solution that will solve all your needs.
                    </p>
                     
                   </div>
@@ -187,7 +187,7 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
                       <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Global marketplace cluster</h3>
-                      <p className="text-gray-600 mb-8">Connect to 750+ predefined marketplaces or add custom channels.<br />We connect your channels.<br />
+                      <p className="text-gray-600 mb-8">Connect to 750+ predefined marketplaces or add custom channels.<br />Our cloud connects your channels.<br />
                       </p>
                     </div>
                   </div>
