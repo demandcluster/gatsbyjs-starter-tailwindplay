@@ -9,7 +9,7 @@ function IndexPage() {
     <Layout>
     
       <SEO
-        title="GatsbyJS Tailwind Starter"
+        title="DemandCluster | Next-Level eCommerce Solutions"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
