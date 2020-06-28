@@ -4,9 +4,10 @@ module.exports = {
     description: `DemandCluster Landing Page`,
     author: `@rondlite`,
     github: `https://github.com/demandcluster`,
+    backend: `https://backend.demandcluster.com`,
     blog: `https://blog.appseed.us/tag/gatsbyjs`,
     product: `https://appseed.us/apps/gatsbyjs`,
-    docs: `https://docs.appseed.us/apps/gatsbyjs`
+    docs: `https://docs.demandcluster.com`
 
   },
   plugins: [
@@ -14,13 +15,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `demandcluster`,
+        short_name: `demand`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#274093`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/demand-beeldmerk.png`
       }
     },
     `gatsby-plugin-postcss`,

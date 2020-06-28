@@ -53,9 +53,9 @@ function Layout({ children }) {
                       <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
                     </li>
                   </ul>
-                  <form action={data.site.siteMetadata.github}>
+                  <form action={data.site.siteMetadata.backend}>
                     <button type="submit" id="navAction" 
-                            className="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Get Sources</button>
+                            className="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Login</button>
                   </form>
 
                 </div>
@@ -76,8 +76,8 @@ function Layout({ children }) {
                    Professional eCommerce done right.
                   </p>
 
-                  <form action={data.site.siteMetadata.github}>
-                    <button type="submit" className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Get Sources</button>
+                  <form action={data.site.siteMetadata.backend}>
+                    <button type="submit" className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Login</button>
                   </form>
 
                 </div>
