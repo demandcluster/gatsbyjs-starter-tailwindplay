@@ -127,7 +127,7 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6">
                    
 
-<svg id="f1a3512c-954b-43cd-b4a7-b2a657bfa049" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" width="1135.18" height="814.22" viewBox="0 0 1135.18 814.22">
+<svg id="f1a3512c-954b-43cd-b4a7-b2a657bfa049" className="w-full sm:h-64 mx-auto" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" width="1135.18" height="814.22" viewBox="0 0 1135.18 814.22">
   <defs><linearGradient id="a846f69c-c3f1-49f3-adee-5a4e8443ee4e" x1="277.46" y1="697.11" x2="277.46" y2="669.52" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="gray" stop-opacity="0.25"/>
   <stop offset="0.54" stop-color="gray" stop-opacity="0.12"/><stop offset="1" stop-color="gray" stop-opacity="0.1"/>
