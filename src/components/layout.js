@@ -207,7 +207,7 @@ function Layout({ children }) {
               
               <div className="container mx-auto flex flex-wrap pt-4 pb-12">
               
-                <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800">Text Cards</h3>
+                <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800">The next-level eCommerce solution.</h3>
                 <div className="w-full mb-4">	
                   <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
@@ -216,9 +216,13 @@ function Layout({ children }) {
                   <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                     <a href="https://www.gatsbyjs.org/" className="flex flex-wrap no-underline hover:no-underline">
                       <p className="w-full text-gray-600 text-xs md:text-sm px-6">Blazing Fast</p>
-                      <div className="w-full font-bold text-xl text-gray-800 px-6">Static Progressive Web App</div>
+                      <div className="w-full font-bold text-xl text-gray-800 px-6">Headless eCommerce Platform</div>
                       <p className="text-gray-800 text-base px-6 mb-5">
-                        Why Gatsby? Gatsby is a static PWA (Progressive Web App) generator. Gatsby loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible. 
+                        <ul>
+                          <li>
+                            225ms avg. response time
+                          </li>
+                        </ul>
                       </p>
                     </a>
                   </div>
