@@ -10,7 +10,7 @@ function IndexPage() {
     
       <SEO
         title="DemandCluster | Next-Level eCommerce Solutions"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`ecommerce`, `mailchimp open commerce`, `shop`, `channels`]}
       />
 
     </Layout>
