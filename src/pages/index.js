@@ -8,7 +8,7 @@ function IndexPage() {
     <Layout>
     
       <SEO
-        title="DemandCluster | Next-Level eCommerce Solutions"
+        title="Rocket science for eCommerce"
         keywords={[`ecommerce`, `mailchimp open commerce`, `shop`, `channels`]}
       />
 

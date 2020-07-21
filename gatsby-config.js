@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `DemandCluster`,
-    description: `DemandCluster Landing Page`,
+    description: `DemandCluster brings rocket science for ecommerce using a headless graphql API built upon the Mailchimp Open Commerce Platform`,
     author: `@rondlite`,
     github: `https://github.com/demandcluster`,
     backend: `https://backend.demandcluster.com`,
