@@ -221,12 +221,25 @@ function Layout({ children }) {
                   <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                     <a href="https://www.gatsbyjs.org/" className="flex flex-wrap no-underline hover:no-underline">
                       <p className="w-full text-gray-600 text-xs md:text-sm px-6">Blazing Fast</p>
-                      <div className="w-full font-bold text-xl text-gray-800 px-6">Headless eCommerce Platform</div>
+                      <div className="w-full font-bold text-xl text-gray-800 px-6">225ms avg. response time</div>
                       <p className="text-gray-800 text-base px-6 mb-5">
                         <ul>
                           <li>
-                            225ms avg. response time
+                            GraphQL API
                           </li>
+                          <li>
+                            Modular structure
+                          </li>
+                          <li>
+                          1 million+ SKU catalogs
+                          </li>
+                          <li>
+                          Cluster of servers
+                          </li>
+                          <li>
+                          100% uptime
+                          </li>
+                          
                         </ul>
                       </p>
                     </a>
