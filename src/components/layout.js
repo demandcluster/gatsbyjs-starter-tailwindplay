@@ -20,7 +20,7 @@ function Layout({ children }) {
         }
       `}
       render={data => (
-        <body className="leading-normal tracking-normal text-white gradient">
+        <div className="leading-normal tracking-normal text-white gradient">
 
             {children}
      
@@ -474,7 +474,7 @@ function Layout({ children }) {
           
             </footer>
 
-        </body>
+        </div>
       )}
     />
   );
