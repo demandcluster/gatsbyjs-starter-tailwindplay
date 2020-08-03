@@ -24,6 +24,7 @@ module.exports = {
         icon: `src/images/demand-beeldmerk.png`
       }
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-postcss`,
     {
       resolve: "gatsby-plugin-purgecss",
