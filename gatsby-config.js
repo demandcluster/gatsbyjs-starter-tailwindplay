@@ -33,9 +33,9 @@ module.exports = {
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
     },
-    `gatsby-plugin-netlify-headers`,
+    `gatsby-plugin-netlify`,
     {
-      resolve: ` gatsby-plugin-netlify-headers`,
+      resolve: ` gatsby-plugin-netlify`,
       options: {
         headers: {
           "/*": [

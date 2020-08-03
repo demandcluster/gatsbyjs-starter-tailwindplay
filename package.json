@@ -59,5 +59,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "chokidar": "3.3.0"
   }
 }
