@@ -21,7 +21,15 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#274093`,
         display: `minimal-ui`,
-        icon: `src/images/demand-beeldmerk.png`
+        icons: [
+          {"src": `src/images/demand-beeldmerk.png`,
+           "purpose": "any"
+          },
+          {
+            "src": "src/images/maskable_icon.png",
+            "purpose": "maskable"
+          }
+        ]
       }
     },
     `gatsby-plugin-offline`,
