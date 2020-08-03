@@ -21,12 +21,9 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#274093`,
         display: `minimal-ui`,
-        icons: [
-          {"src": `src/images/demand-beeldmerk.png`,
-           "purpose": "any"
-          },
+        icon: "src/images/maskable_icon.png",
+        icon_options: [ 
           {
-            "src": "src/images/maskable_icon.png",
             "purpose": "maskable"
           }
         ]
