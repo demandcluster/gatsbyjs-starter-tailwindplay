@@ -6,7 +6,7 @@
   "dependencies": {
     "ftp-deploy": "2.3.3",
     "gatsby": "^2.24.23",
-    "gatsby-plugin-manifest": "2.2.0",
+    "gatsby-plugin-manifest": "2.4.21",
     "gatsby-plugin-netlify": "^2.3.11",
     "gatsby-plugin-offline": "^3.2.21",
     "gatsby-plugin-postcss": "2.1.0",
