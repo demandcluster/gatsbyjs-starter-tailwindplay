@@ -31,6 +31,25 @@ module.exports = {
         tailwind: true,
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
+    },
+    `gatsby-plugin-netlify-headers`,
+    {
+      resolve: ` gatsby-plugin-netlify-headers`,
+      options: {
+        headers: {
+          "/*": [
+            "cache-control: max-age=0",
+            "cache-control: must-revalidate",
+          ]
+        },                                  // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [
+          "Link: </static/hero.png>; rel=preload; as=image",
+        ],                           // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true,                   // boolean to turn off the default security headers
+        mergeLinkHeaders: false,                      // boolean to turn off the default gatsby js headers (disabled by default, until gzip is fixed for server push)
+        mergeCachingHeaders: true,                    // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+      }
     }
   ]
 };
