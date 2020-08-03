@@ -33,7 +33,6 @@ module.exports = {
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
     },
-    `gatsby-plugin-netlify`,
     {
       resolve: ` gatsby-plugin-netlify`,
       options: {
