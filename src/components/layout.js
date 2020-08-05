@@ -8,7 +8,7 @@ function Layout({ children }) {
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {
-          file(relativePath: { eq: "../images/hero.png" }) {
+          file(relativePath: { eq: "hero.png" }) {
             childImageSharp {
               # Specify the image processing specifications right in the query.
               # Makes it trivial to update as your page's design changes.
