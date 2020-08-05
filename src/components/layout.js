@@ -1,14 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-
-import heroImg from "../images/hero.png";
+import Img from "gatsby-image";
 
 function Layout({ children }) {
   return (
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {
+          file(relativePath: { eq: "../images/hero.png" }) {
+            childImageSharp {
+              # Specify the image processing specifications right in the query.
+              # Makes it trivial to update as your page's design changes.
+              fixed(width: 125, height: 125) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
           site {
             siteMetadata {
               title,
@@ -16,6 +24,7 @@ function Layout({ children }) {
               backend,
               blog
             }
+            
           }
         }
       `}
@@ -84,7 +93,7 @@ function Layout({ children }) {
                 </div>
 
                 <div className="w-full md:w-3/5 py-6 text-center">
-                  <img className="w-full md:w-4/5 z-50" alt="Demandcluster eCommerce" src={heroImg} />
+                  <Img className="w-full md:w-4/5 z-50" fixed={data.file.childImageSharp.fixed}  />
                 </div>
                 
               </div>
