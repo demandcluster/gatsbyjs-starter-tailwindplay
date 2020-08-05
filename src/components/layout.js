@@ -12,8 +12,8 @@ function Layout({ children }) {
             childImageSharp {
               # Specify the image processing specifications right in the query.
               # Makes it trivial to update as your page's design changes.
-              fixed(width: 250, height: 250) {
-                ...GatsbyImageSharpFixed
+              sizes(maxWidth: 613) {
+                ...GatsbyImageSharpSizes
               }
             }
           },
@@ -93,7 +93,7 @@ function Layout({ children }) {
                 </div>
 
                 <div className="w-full md:w-3/5 py-6 text-center">
-                  <Img className="w-full md:w-4/5 z-50" fixed={data.file.childImageSharp.fixed}  />
+                  <Img className="w-full md:w-4/5 z-50" sizes={data.file.childImageSharp.sizes}  />
                 </div>
                 
               </div>
