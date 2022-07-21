@@ -18,10 +18,10 @@ export default function SEO(props) {
         }
       }
       featuredImage: file(
-        absolutePath: { glob: "**/src/images/demand-beeldmerk.png" }
+        absolutePath: { glob: "**/src/images/launch.png" }
       ) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 150)
+          gatsbyImageData(layout: FIXED, width: 1093)
         }
       }
     }
