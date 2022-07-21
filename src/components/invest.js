@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -8,6 +8,8 @@ import GrowthCurve from "../images/growth_curve.svg";
 import Projections from "../images/projections.svg";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import CountDownTimer from './CountDownTimer';
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -35,6 +37,24 @@ function Invest({ children }) {
 
 const percentLeft=30
 const percentDeveloped=80
+
+
+const FOUR_MONTHS_IN_MS = 122 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = 1658393120419;
+
+  const dateTimeAfterFourMonths = NOW_IN_MS + FOUR_MONTHS_IN_MS;
+
+useEffect(()=>{
+  fetch('https://maker.ifttt.com/trigger/visit_demandcluster/json/with/key/bZcA4kbVP98YZhTerM683_')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(response.statusText)
+    }
+    return response.json()
+  }).catch(err=>{
+  console.log(err)
+})
+},[]);
 
   const options = {
     responsive: true,
@@ -169,7 +189,7 @@ const percentDeveloped=80
                   <p className="leading-normal text-2xl mb-8">
                    Rocket Science for Marketplaces
                   </p>
-                  <p className="leading-normal text-6xl mb-8">
+                  <p className="leading-normal text-4xl mb-8">
                    Investment opportunity
                   </p>
 
@@ -318,10 +338,9 @@ const percentDeveloped=80
                       <p className="text-gray-600 mb-8">
                         Demandcluster is like a mini-Amazon. We have our own cloud infrastructure combined with a flexible headless marketplace platform.
                         There is no 3rd party dependencies which increases our profit margin significantly.
-                        Each customer will bring a substantial amount of growth.
-
-
+                        Each customer will bring a substantial amount of growth
                       </p>
+                      
                   </div>
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
@@ -381,6 +400,9 @@ const percentDeveloped=80
                       )}
                     </VisibilitySensor>
                     </h3>	
+                    <h4>
+                    Launch within <CountDownTimer targetDate={dateTimeAfterFourMonths}/>
+                    </h4>
                 <h4>Contact us now through known channels or use our Discord below</h4>
               <form action={data.site.siteMetadata.blog}>
                 <button type="submit"
