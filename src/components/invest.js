@@ -238,10 +238,10 @@ const percentDeveloped=80
                 </div>
         </div>
         </section>
-        <section className="bg-white border-b py-8">
-                
+        <section className="bg-white border-b py-8 ">
+        <div className="container max-w-5xl mx-auto m-8">
 
-                <div className="flex flex-wrap flex-col-reverse sm:flex-row">	
+                <div className="flex flex-wrap flex-col-reverse sm:flex-row ">	
                   <div className="w-full sm:w-1/2 p-6 mt-6">
            
                   <Projections className="max-w-sm md:max-w-full"/>
@@ -306,11 +306,11 @@ const percentDeveloped=80
                   </div>
 
                 </div>
-              
+              </div>
             </section>
 
             <section className="bg-white border-b py-8">
-                
+            <div className="container max-w-5xl mx-auto m-8">
 
                 <div className="flex flex-wrap sm:flex-row">	
                   <div className="w-full sm:w-1/2 p-6 mt-6">
@@ -339,7 +339,7 @@ const percentDeveloped=80
                   </div>
 
                 </div>
-              
+              </div>
             </section>
 
         
