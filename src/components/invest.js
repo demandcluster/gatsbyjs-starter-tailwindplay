@@ -298,7 +298,7 @@ const percentDeveloped=80
     </div>
   </div>
 
-  We will reimburse the invested amount within 3 years in which case we will get back 0.5% of the shares. Leaving the investor with 1% per purchased package and a pure profit outcome. If Demandcluster fails to pay back the full amount within 3 years, the 1.5% will stand and the obligation to pay back the invested amount remains.
+  We will reimburse the invested amount within 3 years in which case we will get back ⅓ of the shares (500). Leaving the investor with 1% per purchased package and a pure profit outcome. If Demandcluster fails to pay back the full amount within 3 years, the 1.5% will stand and the obligation to pay back the invested amount remains.
   If you need more insight, please enquire to receive our pitch deck.
 
                       </p>
