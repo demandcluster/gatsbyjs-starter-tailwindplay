@@ -10,6 +10,7 @@ function IndexPage() {
       <SEO
         title="Board now for the Demandcluster launch!"
         keywords={[`ecommerce`, `mailchimp open commerce`, `shop`, `channels`]}
+        description={`Your chance to invest in innovation`}
       />
 
     </Invest>
