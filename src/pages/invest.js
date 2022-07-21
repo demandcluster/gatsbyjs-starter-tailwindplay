@@ -8,7 +8,7 @@ function IndexPage() {
     <Invest>
     
       <SEO
-        title="Rocket science for eCommerce"
+        title="Board now for the Demandcluster launch!"
         keywords={[`ecommerce`, `mailchimp open commerce`, `shop`, `channels`]}
       />
 

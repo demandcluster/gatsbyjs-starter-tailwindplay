@@ -1,96 +1,114 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
-
-function SEO({ description, lang, meta, keywords, title }) {
-  return (
-    <StaticQuery
-      query={detailsQuery}
-      render={data => {
-        const metaDescription =
-          description || data.site.siteMetadata.description;
-        return (
-          <Helmet
-            htmlAttributes={{
-              lang
-            }}
-            title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-            meta={[
-              {
-                name: `description`,
-                content: metaDescription
-              },
-              {
-                property: `og:title`,
-                content: title
-              },
-              {
-                property: `og:description`,
-                content: metaDescription
-              },
-              {
-                property: `og:type`,
-                content: `website`
-              },
-              {
-                name: `twitter:card`,
-                content: `summary`
-              },
-              {
-                name: `twitter:creator`,
-                content: data.site.siteMetadata.author
-              },
-              {
-                name: `twitter:title`,
-                content: title
-              },
-              {
-                name: `twitter:description`,
-                content: metaDescription
-              }
-            ]
-              .concat(
-                keywords.length > 0
-                  ? {
-                      name: `keywords`,
-                      content: keywords.join(`, `)
-                    }
-                  : []
-              )
-              .concat(meta)}
-          />
-        );
-      }}
-    />
-  );
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: []
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired
-};
-
-export default SEO;
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        author
+import { useStaticQuery, graphql } from 'gatsby';
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+import { useLocation } from '@reach/router';
+export default function SEO(props) {
+  // first get our default data from gatsby config and default featured image
+  const { site, featuredImage } = useStaticQuery(graphql`
+    query SeoMetaData {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          og {
+            siteName
+            twitterCreator
+          }
+        }
+      }
+      featuredImage: file(
+        absolutePath: { glob: "**/src/images/demand-beeldmerk.png" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, width: 150)
+        }
       }
     }
+  `);
+  // determine the featured image from props
+  const ogImage =
+    props.featuredImage ?? featuredImage?.childImageSharp?.gatsbyImageData;
+  // determine title and description
+  const title = props.title ?? site?.siteMetadata?.title;
+  const description = props.description ?? site?.siteMetadata?.description;
+  // Use the location hook to get current page URL
+  const location = useLocation();
+  // construct the meta array for passing into react helmet.
+  const metas = [
+    // basic seo
+    {
+      name: 'description',
+      content: description,
+    },
+    {
+      name: 'og:image',
+      content: ogImage.images.fallback.src,
+    },
+    {
+      name: 'og:image:width',
+      content: `${ogImage.width}`,
+    },
+    {
+      name: 'og:image:height',
+      content: `${ogImage.height}`,
+    },
+    {
+      name: 'og:type',
+      content: 'website',
+    },
+    {
+      name: 'og:title',
+      content: title,
+    },
+    {
+      name: 'og:description',
+      content: description,
+    },
+    {
+      name: 'og:site_name',
+      content: site.siteMetadata.og.siteName,
+    },
+    {
+      name: 'og:url',
+      content: `${site?.siteMetadata?.siteUrl}${location.pathname}`,
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:description',
+      content: description,
+    },
+    {
+      name: 'twitter:title',
+      content: title,
+    },
+    {
+      name: 'twitter:image',
+      content: ogImage.images.fallback.src,
+    },
+    {
+      name: 'twitter:creator',
+      content: site.siteMetadata.og.twitterCreator,
+    },
+  ];
+  // If we have keywords, then add it
+  if (props.keywords) {
+    metas.push({
+      name: 'keywords',
+      content: props.keywords,
+    });
   }
-`;
+  return (
+    <Helmet>
+      <html lang="en" />
+      <meta charSet="utf-8" />
+      <title>{title}</title>
+      {metas.map(meta => (
+        <meta key={meta.name} name={meta.name} content={meta.content} />
+      ))}
+    </Helmet>
+  );
+}

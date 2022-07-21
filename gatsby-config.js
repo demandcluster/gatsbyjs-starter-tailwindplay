@@ -9,7 +9,12 @@ module.exports = {
     backend: `https://backend.demandcluster.com`,
     blog: `https://discord.gg/Wfr4GJWy7C`,
     product: `https://appseed.us/apps/gatsbyjs`,
-    docs: `https://docs.demandcluster.com`
+    docs: `https://docs.demandcluster.com`,
+    siteUrl: `https://demandcluster.com`,
+    og: {
+      siteName: 'Demandcluster',
+      twitterCreator: '@demandcluster',
+    },
 
   },
   plugins: [
