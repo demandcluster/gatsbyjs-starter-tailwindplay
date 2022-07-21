@@ -35,7 +35,7 @@ function Layout({ children }) {
      
         
             {/* Navigation */}
-            <nav id="header" className="fixed w-full z-30 top-0 text-white bg-white shadow">
+            <nav id="header" className="fixed w-full z-50 top-0 text-white bg-white shadow">
 
               <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                   
@@ -75,7 +75,7 @@ function Layout({ children }) {
             </nav>
 
             {/* Hero */}
-            <div className="pt-24">
+            <div className="pt-24 z-0">
 
               <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
@@ -92,10 +92,10 @@ function Layout({ children }) {
 
                 </div>
 
-                <div className="w-full md:w-3/5 py-6 text-center">
-                  <Img className="w-full md:w-4/5 z-50" sizes={data.file.childImageSharp.sizes}  />
+                <div className="w-full md:w-3/5 py-6 text-center z-0">
+                  <Img className="w-full md:w-4/5 z-0" sizes={data.file.childImageSharp.sizes}  />
                 </div>
-                
+          
               </div>
 
             </div>

@@ -1,18 +1,18 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Invest from "../components/invest";
 import SEO from "../components/seo";
 
 function IndexPage() {
   return (
-    <Layout>
+    <Invest>
     
       <SEO
         title="Rocket science for eCommerce"
         keywords={[`ecommerce`, `mailchimp open commerce`, `shop`, `channels`]}
       />
 
-    </Layout>
+    </Invest>
   );
 }
 

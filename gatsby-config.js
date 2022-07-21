@@ -7,7 +7,7 @@ module.exports = {
     author: `@rondlite`,
     github: `https://github.com/demandcluster`,
     backend: `https://backend.demandcluster.com`,
-    blog: `https://blog.appseed.us/tag/gatsbyjs`,
+    blog: `https://discord.gg/Wfr4GJWy7C`,
     product: `https://appseed.us/apps/gatsbyjs`,
     docs: `https://docs.demandcluster.com`
 
@@ -29,6 +29,14 @@ module.exports = {
             "purpose": "maskable"
           }
         ]
+      }
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images\/.*\.svg/ // See below to configure properly
+        }
       }
     },
     {
