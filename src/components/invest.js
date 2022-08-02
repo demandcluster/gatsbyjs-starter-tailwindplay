@@ -35,8 +35,8 @@ function Invest({ children }) {
     Legend
   );
 
-const percentLeft=30
-const percentDeveloped=80
+const percentLeft=27;
+const percentDeveloped=81;
 
 
 const FOUR_MONTHS_IN_MS = 122 * 24 * 60 * 60 * 1000;
@@ -242,11 +242,15 @@ useEffect(()=>{
                           
                         </div>
                       )}
-                    </VisibilitySensor>
-                   
+                    </VisibilitySensor> 
+                   Demandcluster is an eCommerce platform like no other. It integrates features like channel management (750+ predefined channels) for import and export of live shop data. Shops are fully multi-vendor,multi-tentant and multi-channel.
+                   Our USP is that we are the only platform in the world that combines the channel and multi-vendor features. This technology is made for shops that contain a large number of products (1m+).
+
                    Demandcluster runs on a fully operational multi-datacenter private cloud since 2020.
                    Our cloud service is fully compatible with AWS, EC3, K8S. Demandcluster has full control over the route of all data.
                    We have contributed to the Mailchimp Open Commerce framework and are very active in their community through moderation of their communication channels and regular meetings.
+
+                   We have several large launching customers awaiting our launch.
                     </p>
                     
                   </div>
@@ -318,8 +322,8 @@ useEffect(()=>{
     </div>
   </div>
 
-  We will reimburse the invested amount within 3 years in which case we will get back ⅓ of the shares (500 per package). Leaving the investor with 1% per purchased package and a pure profit outcome. If Demandcluster fails to pay back the full amount within 3 years, the 1.5% will stand and the obligation to pay back the invested amount remains.
-  If you need more insight, please enquire to receive our pitch deck.
+  We will reimburse the invested amount within 3 years in which case we will get back ⅓ of the shares (500 per package). Leaving the investor with 1% in shares per purchased package and a pure profit outcome. If Demandcluster fails to pay back the full amount within 3 years, the 1.5% will stand and the obligation to pay back the invested amount remains.
+  <em>If you need more insight, please enquire to receive our pitch deck</em>.
 
                       </p>
                     </div>
