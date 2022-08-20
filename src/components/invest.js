@@ -412,7 +412,7 @@ useEffect(()=>{
                 <button type="submit"
                         className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join our Discord</button>
               </form>
-              <p className="text-xs">The data on this website is updated live.<br/>This opportunity will last for a maximum of 60 days from the 21st of June 2022.
+              <p className="text-xs">The data on this website is updated live.<br/>This opportunity will last for a maximum of 60 days from the 21st of July 2022.
                     </p>
             </section>
 
