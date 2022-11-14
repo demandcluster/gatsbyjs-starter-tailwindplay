@@ -326,7 +326,7 @@ useEffect(()=>{
     </div>
   </div>
 
-  We will reimburse the invested amount within 3 years in which case we will get back ⅓ of the shares (500 per package). Leaving the investor with 1% in shares per purchased package and a pure profit outcome. If Demandcluster fails to pay back the full amount within 3 years, the 1.5% will stand and the obligation to pay back the invested amount remains.
+  We will reimburse the invested amount within 3 years in which case we will get back ⅓ of the shares (1000 per package). Leaving the investor with 1% in shares per purchased package and a pure profit outcome. If Demandcluster fails to pay back the full amount within 3 years, the 1.5% will stand and the obligation to pay back the invested amount remains.
   <em>If you need more insight, please enquire to receive our pitch deck</em>.
 
                       </p>
