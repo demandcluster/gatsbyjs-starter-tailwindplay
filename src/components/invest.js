@@ -92,7 +92,7 @@ useEffect(()=>{
   
   const dataSet1=[30000,500000,2000000,5000000,10000000]
 
-  const dataSet2=[5000,7500,30000,50000,100000]
+  const dataSet2=[10000,15000,60000,100000,200000]
 
   const dataChart = {
     labels,
@@ -283,7 +283,7 @@ useEffect(()=>{
       <tbody>
          <tr class="border-b hover:bg-gray-50">
             <td class="p-4">
-               &euro;5,000
+               &euro;10.,000
             </td>
             <td class="p-4">
                package pricing
@@ -292,7 +292,7 @@ useEffect(()=>{
          </tr>
          <tr class="border-b hover:bg-gray-50">
             <td class="p-4">
-               1.5%
+               3%
             </td>
             <td class="p-4">
                percentage of total  
@@ -301,7 +301,7 @@ useEffect(()=>{
          </tr>
          <tr class="border-b hover:bg-gray-50">
             <td class="p-4">
-               1,500
+               3,000
             </td>
             <td class="p-4">
                amount of shares  
@@ -310,7 +310,7 @@ useEffect(()=>{
          </tr>
          <tr class="border-b hover:bg-gray-50">
             <td class="p-4">
-               1%
+               2%
             </td>
             <td class="p-4">
                percentage remaining after invested amount is reimbursed
