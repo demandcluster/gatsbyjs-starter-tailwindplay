@@ -87,6 +87,7 @@ function Layout({ children }) {
 
                 <div className="w-full md:w-3/5 py-6 text-center z-0">
                   <GatsbyImage
+                    loading={"eager"}
                     image={data.file.childImageSharp.gatsbyImageData}
                     className="w-full md:w-4/5 z-0" />
                 </div>
