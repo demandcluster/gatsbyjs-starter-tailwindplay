@@ -18,7 +18,8 @@ module.exports = {
 
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+   
+    `gatsby-optional-chaining`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,15 +30,16 @@ module.exports = {
         theme_color: `#274093`,
         display: `minimal-ui`,
         icon: "src/images/maskable_icon.png",
-        icon_options: [ 
+        icon_options:  
           {
             "purpose": "maskable"
           }
-        ]
+        
       }
     },
     {
       resolve: "gatsby-plugin-react-svg",
+      
       options: {
         rule: {
           include: /images\/.*\.svg/ // See below to configure properly
@@ -51,10 +53,12 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-postcss`,
-    `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`,
+
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -62,6 +66,7 @@ module.exports = {
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
     },
+  
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
@@ -75,7 +80,7 @@ module.exports = {
          
         ],                           // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true,                   // boolean to turn off the default security headers
-        mergeLinkHeaders: false,                      // boolean to turn off the default gatsby js headers (disabled by default, until gzip is fixed for server push)
+       
         mergeCachingHeaders: true,                    // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
       }

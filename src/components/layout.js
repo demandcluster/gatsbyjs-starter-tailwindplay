@@ -1,33 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 function Layout({ children }) {
   return (
     <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          file(relativePath: { eq: "hero.png" }) {
-            childImageSharp {
-              # Specify the image processing specifications right in the query.
-              # Makes it trivial to update as your page's design changes.
-              sizes(maxWidth: 613) {
-                ...GatsbyImageSharpSizes
-              }
-            }
-          },
-          site {
-            siteMetadata {
-              title,
-              github,
-              backend,
-              blog
-            }
-            
-          }
-        }
-      `}
+      query={graphql`query SiteTitleQuery {
+  file(relativePath: {eq: "hero.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 613, layout: CONSTRAINED)
+    }
+  }
+  site {
+    siteMetadata {
+      title
+      github
+      backend
+      blog
+    }
+  }
+}`}
       render={data => (
         <div className="leading-normal tracking-normal text-white gradient">
 
@@ -93,7 +86,9 @@ function Layout({ children }) {
                 </div>
 
                 <div className="w-full md:w-3/5 py-6 text-center z-0">
-                  <Img className="w-full md:w-4/5 z-0" sizes={data.file.childImageSharp.sizes}  />
+                  <GatsbyImage
+                    image={data.file.childImageSharp.gatsbyImageData}
+                    className="w-full md:w-4/5 z-0" />
                 </div>
           
               </div>
