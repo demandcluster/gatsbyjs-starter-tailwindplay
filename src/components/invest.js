@@ -218,6 +218,16 @@ useEffect(()=>{
               </g>
               </svg>
             </div>
+<section className="bg-white border-b py-8">          
+<div style={{ height: "600px", width: "400px" }}>
+    <iframe
+        src={`https://ora.ai/embed/9b4e8c3e-2f67-4df0-9699-b7e3d2efa939`}
+        width="100%"
+        height="100%"
+        style={{ border: "0", borderRadius: "4px" }}
+    />
+</div>
+</section>
 
             {/* Alternate features */}
             <section className="bg-white border-b py-8">
