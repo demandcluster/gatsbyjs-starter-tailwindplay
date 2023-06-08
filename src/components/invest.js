@@ -218,7 +218,7 @@ useEffect(()=>{
               </g>
               </svg>
             </div>
-<section className="bg-white border-b py-8 w-full mx-auto items-center text-center">          
+<section className="flex flex-col bg-white border-b py-8 w-full mx-auto items-center text-center">          
 <div class="items-center" style={{ height: "600px", width: "400px" }}>
     <iframe
         src={`https://ora.ai/embed/9b4e8c3e-2f67-4df0-9699-b7e3d2efa939`}
