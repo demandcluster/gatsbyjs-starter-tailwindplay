@@ -26,12 +26,14 @@ export default function HTML(props) {
 <script
   dangerouslySetInnerHTML={{
     __html: `
-        var LHCChatboxOptions = {hashchatbox:'empty',identifier:'default',status_text:'Help'};
+  var LHC_API = LHC_API||{};
+LHC_API.args = {mode:'widget',lhc_base_url:'//dc.livehelperchat.com/',wheight:450,wwidth:350,pheight:520,pwidth:500,domain:'demandcluster.com',fresh:true,leaveamessage:true,department:["1"],check_messages:true,lang:'eng/'};
 (function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-po.src = '//dc.livehelperchat.com/nld/chatbox/getstatus/(position)/bottom_right/(top)/300/(units)/pixels/(width)/300/(height)/300/(chat_height)/220/(scm)/true';
+var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true;
+var date = new Date();po.src = '//dc.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();`
+})();
+    `
 }}
 />
 
